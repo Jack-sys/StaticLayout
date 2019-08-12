@@ -1,0 +1,196 @@
+nav {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70;
+    width: 100vw;
+    z-index: 1; 
+}
+
+nav ul li {
+    float: right;
+    margin-right: 35px;
+    list-style-type: none;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.netflix {
+    position: relative;
+    width: 360px;
+    height: 520px;
+    overflow: hidden;
+    transform: scale(.6);
+}
+.netflix:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 100%;
+    height: 120px;
+    background: rgb(15, 15, 15);
+    z-index: 2;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: scaleX(1.5);
+}
+.netflix:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #000, #000);
+    z-index: 3;
+}
+
+.netflix span {
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    background: #fff;
+}
+.netflix span:nth-child(1) {
+    background: #b00612;
+    left: 0;
+}
+.netflix span:nth-child(2) {
+    background: #e50815;
+    left: 0;
+    z-index: 1;
+    transform-origin: top left;
+    transform: skewX(24.8deg);
+    box-shadow: 0 0 40px rgba(0,0,0,1);
+}
+.netflix span:nth-child(3) {
+    background: #b00612;
+    right: 0;
+}
+
+h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: arial;
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+}
+
+#brand {
+    float: middle;
+}
+
+.nav-link {
+    color: rgb(170, 159, 159);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-link:hover {
+    color: rgb(122, 58, 58);
+    font-weight: bold;
+}
+
+#brand .nav-link {
+    color: rgb(170, 159, 159);
+    font-size: 10pt
+}
+
+#brand .nav-link:hover {
+    color: rgb(122, 58, 58);
+}
+
+body{
+    background-color: rgb(29, 26, 26);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header-tag {
+    text-align: center;
+    color: rgb(219, 219, 219);
+    text-shadow: 1px 3px 3px rgb(143, 37, 37);
+}
+
+h3.header-tag {
+    margin-top: -30px;
+    font-size: 100pt;
+}
+
+.search-bar{
+    position: absolute;
+    top: 73%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-bar:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-bar:hover > .search-icon{
+    position: absolute;
+    top: 18%;
+    left: 81%;
+    background: white;
+}
+
+
+.search-icon{
+    color: #922020;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #14171b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+#home {
+    margin-top: -40px;
+    position: relative;
+    left: -8px;
+    width: 150vw;
+    height: 99vh;
+    padding-top: 3em;
+    background: url(https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225-xl.jpg) center 70% no-repeat fixed;
+    background-size: cover;
+   }
